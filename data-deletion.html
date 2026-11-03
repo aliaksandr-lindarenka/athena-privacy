@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Athena — User Data Deletion</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #d6d3d1;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #ebe4d8 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #dfece9 0%, transparent 50%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.5rem;
+      color: var(--accent);
+    }
+    p, li { font-size: 1.02rem; }
+    ol, ul { padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--accent); }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 2rem 0;
+    }
+    footer { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Athena — User Data Deletion</h1>
+    <p class="meta">Last updated: 3 November 2026</p>
+
+    <p>
+      Athena stores Instagram-related data only on the operator’s private
+      installation. To delete that data, follow the steps below.
+    </p>
+
+    <h2>1. Disconnect Instagram from Athena</h2>
+    <ol>
+      <li>Open Athena → Account</li>
+      <li>Disconnect / remove the connected Instagram account</li>
+    </ol>
+
+    <h2>2. Revoke app access in Meta / Instagram</h2>
+    <ol>
+      <li>Open Instagram or Meta account settings → Apps and websites (or Business integrations)</li>
+      <li>Remove / revoke access for the Athena app</li>
+    </ol>
+
+    <h2>3. Delete local Athena data</h2>
+    <p>
+      On the server that runs Athena, delete the application data directory
+      (posts, comments, analyses, encrypted tokens, and related files) or remove
+      the Athena deployment entirely. After that, no Instagram content or tokens
+      from Athena remain on that installation.
+    </p>
+
+    <h2>4. Requests</h2>
+    <p>
+      If you need help confirming deletion, contact the operator via the GitHub
+      account that hosts this page. Deletion is usually completed as soon as the
+      steps above are performed on the private installation.
+    </p>
+
+    <hr />
+    <footer>
+      Related:
+      <a href="./">Privacy Policy</a> ·
+      <a href="./terms.html">Terms of Service</a>
+    </footer>
+  </main>
+</body>
+</html>
