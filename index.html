@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Athena — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #d6d3d1;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #ebe4d8 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #dfece9 0%, transparent 50%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.5rem;
+      color: var(--accent);
+    }
+    p, li { font-size: 1.02rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--accent); }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 2rem 0;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Athena Privacy Policy</h1>
+    <p class="meta">Last updated: 3 November 2026</p>
+
+    <p>
+      Athena is a personal tool for managing and analyzing the operator’s own
+      Instagram professional account. It is not offered as a public multi-user
+      service.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Athena is operated by the account owner for private use on a local or
+      private network (for example, a home NAS). Contact for privacy questions:
+      via the GitHub account that hosts this policy page.
+    </p>
+
+    <h2>2. Data we process</h2>
+    <p>Depending on connected features, Athena may process:</p>
+    <ul>
+      <li>Instagram account identifiers and username</li>
+      <li>Media metadata (captions, timestamps, permalinks, metrics)</li>
+      <li>Comments on the operator’s own media</li>
+      <li>OAuth access tokens needed to call Instagram / Meta APIs</li>
+      <li>Optional analysis text and settings stored by the operator</li>
+    </ul>
+
+    <h2>3. Purpose</h2>
+    <p>Data is used only to:</p>
+    <ul>
+      <li>Synchronize and display the operator’s Instagram content and metrics</li>
+      <li>Support planning, reuse, and AI-assisted analysis for that same account</li>
+      <li>Authenticate the operator to Athena’s local admin interface</li>
+    </ul>
+
+    <h2>4. Sharing</h2>
+    <p>
+      Athena does not sell personal data. Instagram-related data is sent to Meta
+      (Instagram Graph API) as required to provide the requested features.
+      Optional AI features may send prompts and selected content to the
+      configured LLM provider. Data is not shared with other third parties
+      except as needed to run those integrations or as required by law.
+    </p>
+
+    <h2>5. Storage and retention</h2>
+    <p>
+      Data and tokens are stored on infrastructure controlled by the operator
+      (for example, encrypted storage on a private server). Retention is under
+      the operator’s control; data can be deleted by removing Athena’s local
+      data and disconnecting Instagram access in Meta / Instagram settings.
+    </p>
+
+    <h2>6. Security</h2>
+    <p>
+      Access to Athena is protected by local admin credentials. Instagram access
+      tokens are stored encrypted and are not exposed to the browser client.
+    </p>
+
+    <h2>7. Your rights</h2>
+    <p>
+      Because Athena is a personal installation, the operator can review, export,
+      or delete stored data directly on their server and revoke Instagram
+      permissions at any time in Instagram / Meta account settings.
+    </p>
+
+    <h2>8. Changes</h2>
+    <p>
+      This policy may be updated when Athena’s data practices change. The
+      “Last updated” date at the top will be revised accordingly.
+    </p>
+
+    <hr />
+    <footer>
+      This page exists so Meta can review Athena’s privacy practices when the
+      Instagram app is switched to Live mode.
+    </footer>
+  </main>
+</body>
+</html>
